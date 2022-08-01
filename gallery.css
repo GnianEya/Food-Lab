@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #fb8804;
+  text-shadow: 2px 2px 2px #444;
+}
+p {
+  margin: 30px 0;
+}
+/*---------- nav section -----------*/
+nav {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  box-shadow: 0 2px 2px #444;
+  z-index: 999;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  display: flex;
+  /*justify-content: center;
+      align-items:center;*/
+  margin-top: 20px;
+}
+.main-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 2s;
+}
+.logo {
+  display: inline-block;
+  color: #fb8804;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: cursive;
+  margin: 15px 0 0 50px;
+}
+li {
+  margin-right: 40px;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #fb8804;
+}
+/*---------- gal1 section -----------*/
+#gallery1 {
+  width: 100%;
+  height: 780px;
+  padding: 100px 200px;
+}
+#main-dish-text,
+#side-dish-text,
+#dessert-text,
+#drink-text {
+  height: 20%;
+}
+#main-dish-img,
+#side-dish-img,
+#dessert-img,
+#drink-img {
+  height: 80%;
+}
+.dish {
+  width: 30%;
+  height: 50%;
+  border-radius: 30%;
+  margin: 2% 2% 0 0;
+  transition: all 0.5s;
+}
+/*---------- gal2 section -----------*/
+#gallery2,
+#gallery3,
+#gallery4 {
+  width: 100%;
+  height: 500px;
+  padding: 100px 200px;
+}
+.dishes {
+  width: 30%;
+  height: 100%;
+  border-radius: 30%;
+  margin: 8% 2% 0 0;
+  transition: all 0.5s;
+}
+/*--------- footer section -----------*/
+#footer {
+  width: 100%;
+  height: 50px;
+  background-color: #444;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 50px;
+}
+.dish:hover,
+.dishes:hover {
+  transform: scale(1.05);
+}
+/* ---------media query------------- */
+/* from 1024px to 1200px*/
+@media only screen and (max-width: 1200px) {
+  #gallery1 {
+    height: 580px;
+    padding: 50px 100px;
+  }
+  #gallery2,
+  #gallery3,
+  #gallery4 {
+    height: 350px;
+    padding: 50px 100px;
+  }
+}
+@media only screen and (max-width: 979px) {
+  #gallery1 {
+    height: 550px;
+    padding: 50px 100px;
+  }
+  #gallery2,
+  #gallery3,
+  #gallery4 {
+    height: 320px;
+    padding: 40px 100px;
+  }
+}
